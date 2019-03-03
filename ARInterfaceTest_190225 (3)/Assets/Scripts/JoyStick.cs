@@ -7,6 +7,8 @@ public class JoyStick : MonoBehaviour {
 
 	// Use this for initialization
 
+	public GameObject sportscar;
+
 	public Transform car;
 	public Transform Stick;
 	private Vector3 StickFirstPos;
@@ -53,6 +55,11 @@ public class JoyStick : MonoBehaviour {
         JoyVec = Vector3.zero;          // 방향을 0으로.
 		MoveFlag = false;
     }
+
+	public void OriginalPosition()
+	{
+		sportscar.transform.position = new Vector3(0,0,30);
+	} 
 }
  
 	
